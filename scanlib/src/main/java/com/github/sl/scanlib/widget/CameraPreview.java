@@ -33,7 +33,6 @@ import net.sourceforge.zbar.BarcodeFormat;
 import net.sourceforge.zbar.Config;
 import net.sourceforge.zbar.Image;
 import net.sourceforge.zbar.ImageScanner;
-import net.sourceforge.zbar.ScannerView;
 import net.sourceforge.zbar.Symbol;
 import net.sourceforge.zbar.SymbolSet;
 
@@ -428,7 +427,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                     } catch (FoundPartException e) {
                         autoZoomIfNeed(e, cropWidth, cropHeight);
                     }
-                    synchronized (ScannerView.class) {
+                    synchronized (CameraPreview.class) {
                         if (!TextUtils.isEmpty(resultStr) && !scanSuccess){
                             Log.d(TAG, "zxing解析成功，内容: " + resultStr);
                             scanSuccess = true;
@@ -517,7 +516,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                     } catch (RuntimeException e) {
                         e.printStackTrace();
                     }
-                    synchronized (ScannerView.class) {
+                    synchronized (CameraPreview.class) {
                         if (!TextUtils.isEmpty(resultStr) && !scanSuccess){
                             scanSuccess = true;
                             scanSuccess(resultStr);
