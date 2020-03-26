@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 扫描动画 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/shadow" />
+
+            <cn.bertsir.zbar.view.SquareFrameLayout
+                android:id="@+id/fl_scan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/scan_frame_width"
+                android:layout_gravity="center_horizontal">
+
+                <cn.bertsir.zbar.view.CornerView
+                    android:id="@+id/cnv_left_top"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:corner_gravity="leftTop"
+                    app:corner_width="5dp" />
+
+
+                <cn.bertsir.zbar.view.CornerView
+                    android:id="@+id/cnv_left_bottom"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|left"
+                    app:corner_gravity="leftBottom"
+                    app:corner_width="5dp" />
+
+                <cn.bertsir.zbar.view.CornerView
+                    android:id="@+id/cnv_right_top"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|top"
+                    app:corner_gravity="rightTop"
+                    app:corner_width="5dp" />
+
+
+                <cn.bertsir.zbar.view.CornerView
+                    android:id="@+id/cnv_right_bottom"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|bottom"
+                    app:corner_gravity="rightBottom"
+                    app:corner_width="5dp" />
+
+
+                <cn.bertsir.zbar.view.LineView
+                    android:id="@+id/iv_scan_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp" />
+
+            </cn.bertsir.zbar.view.SquareFrameLayout>
+
+            <ImageView
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/shadow" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/shadow">
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="将二维码/条形码放入框内"
+            android:textColor="#C4C4C4"
+            android:textSize="14sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
