@@ -1,4 +1,3 @@
 rootProject.name='AndroidCoreLib'
 include ':app'
-include ':androidutillib'
 include ':scanlib'
