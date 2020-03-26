@@ -19,7 +19,6 @@ public class QRCodeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qrcode);
         LogUtils.init(this);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 0);
         cameraPreview = ((CameraPreview) findViewById(R.id.camera_preview));
