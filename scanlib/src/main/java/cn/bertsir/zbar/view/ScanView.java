@@ -17,7 +17,7 @@ import com.github.sl.scanlib.R;
 import java.util.ArrayList;
 
 import cn.bertsir.zbar.QrConfig;
-import sourceforge.base.base.IViewFinder;
+import com.github.sl.scanlib.widget.IViewFinder;
 
 
 /**

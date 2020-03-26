@@ -1,4 +1,4 @@
-package sourceforge.zbar;
+package net.sourceforge.zbar;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.github.sl.scanlib.widget.IViewFinder;
 import com.google.zxing.FoundPartException;
 import com.google.zxing.PlanarYUVLuminanceSource;
 import com.google.zxing.ResultPoint;
@@ -24,8 +25,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import cn.bertsir.zbar.utils.QRUtils;
-import sourceforge.base.base.BarcodeScannerView;
-import sourceforge.base.base.IViewFinder;
+import net.sourceforge.base.base.BarcodeScannerView;
 
 /**
  * zbar扫码视图，继承自基本扫码视图BarcodeScannerView

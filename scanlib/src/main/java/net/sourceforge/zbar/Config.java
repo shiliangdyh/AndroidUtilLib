@@ -1,4 +1,4 @@
-package sourceforge.zbar;
+package net.sourceforge.zbar;
 
 public class Config {
     public static final int ENABLE = 0;

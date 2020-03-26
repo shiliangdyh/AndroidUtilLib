@@ -1,4 +1,4 @@
-package sourceforge.base.base;
+package net.sourceforge.base.base;
 
 import android.hardware.Camera;
 import android.util.Log;

@@ -1,4 +1,4 @@
-package sourceforge.zbar;
+package net.sourceforge.zbar;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package sourceforge.base.base;
+package com.github.sl.scanlib.widget;
 
 import android.graphics.Rect;
 

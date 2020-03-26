@@ -1,4 +1,4 @@
-package sourceforge.base.base;
+package net.sourceforge.base.base;
 
 import android.Manifest;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+
+import com.github.sl.scanlib.widget.IViewFinder;
 
 import java.util.ArrayList;
 

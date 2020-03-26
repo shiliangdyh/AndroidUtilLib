@@ -41,11 +41,11 @@ import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
 
 import cn.bertsir.zbar.listener.ApiCallBack;
-import sourceforge.zbar.Config;
-import sourceforge.zbar.Image;
-import sourceforge.zbar.ImageScanner;
-import sourceforge.zbar.Symbol;
-import sourceforge.zbar.SymbolSet;
+import net.sourceforge.zbar.Config;
+import net.sourceforge.zbar.Image;
+import net.sourceforge.zbar.ImageScanner;
+import net.sourceforge.zbar.Symbol;
+import net.sourceforge.zbar.SymbolSet;
 
 
 /**

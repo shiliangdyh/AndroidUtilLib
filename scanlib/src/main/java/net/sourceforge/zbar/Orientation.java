@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package sourceforge.zbar;
+package net.sourceforge.zbar;
 
 public class Orientation {
     public static final int UNKNOWN = -1;

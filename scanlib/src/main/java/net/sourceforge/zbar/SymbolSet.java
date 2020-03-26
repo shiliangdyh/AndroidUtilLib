@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package sourceforge.zbar;
+package net.sourceforge.zbar;
 
 import java.util.AbstractCollection;
 import java.util.Iterator;
